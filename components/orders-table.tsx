@@ -1,3 +1,5 @@
+import { ChevronsUpDown } from 'lucide-react'
+
 import {
   Table,
   TableBody,
@@ -5,9 +7,9 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
-import { Badge } from './ui/badge';
-import { ChevronsUpDown } from 'lucide-react';
+} from '@/components/ui/table'
+
+import { Badge } from './ui/badge'
 
 export default function OrdersTable() {
   return (
@@ -16,13 +18,13 @@ export default function OrdersTable() {
         <TableRow className="w-full">
           <TableHead className="table-cell">Cliente</TableHead>
           <TableHead className="table-cell">Status</TableHead>
-          <TableHead className="table-cell cursor-pointer justify-end items-center gap-1">
+          <TableHead className="table-cell cursor-pointer items-center justify-end gap-1">
             <div className="flex items-center gap-1">
               Data
               <ChevronsUpDown className="w-4" />
             </div>
           </TableHead>
-          <TableHead className="text-right cursor-pointer flex justify-end items-center gap-1">
+          <TableHead className="flex cursor-pointer items-center justify-end gap-1 text-right">
             Valor
             <ChevronsUpDown className="w-4" />
           </TableHead>
@@ -32,7 +34,7 @@ export default function OrdersTable() {
         <TableRow>
           <TableCell>
             <div className="font-medium">Fulano de Tal</div>
-            <div className="hidden md:inline text-sm text-muted-foreground">
+            <div className="hidden text-sm text-muted-foreground md:inline">
               fulano.de.tal@gmail.com
             </div>
           </TableCell>
@@ -61,5 +63,5 @@ export default function OrdersTable() {
         </TableRow>
       </TableBody>
     </Table>
-  );
+  )
 }

@@ -1,4 +1,6 @@
+import { Filter } from 'lucide-react'
 
+import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,10 +9,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-
-import { Button } from '@/components/ui/button';
-import { Filter } from 'lucide-react';
+} from '@/components/ui/dropdown-menu'
 
 export default function FilterDropdown() {
   return (
@@ -40,5 +39,5 @@ export default function FilterDropdown() {
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

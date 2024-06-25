@@ -1,5 +1,6 @@
-import { Search } from 'lucide-react';
-import { Input } from '@/components/ui/input';
+import { Search } from 'lucide-react'
+
+import { Input } from '@/components/ui/input'
 
 export default function SearchInput() {
   return (
@@ -11,5 +12,5 @@ export default function SearchInput() {
         className="w-full rounded-lg bg-background pl-8 md:w-[200px] lg:w-[336px]"
       />
     </div>
-  );
+  )
 }
